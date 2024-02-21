@@ -3,7 +3,7 @@ import json
 
 app = Flask(__name__)
 
-with open('combined_data.json', 'r') as json_file:
+with open('table.json', 'r') as json_file:
     bus_data = json.load(json_file)
 
 @app.route('/vehicle', methods=['GET'])

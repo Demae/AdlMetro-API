@@ -4,12 +4,12 @@ import json
 field_names = ['id', 'registration', 'chassis', 'vin', 'body', 'body_no', 'body_date', 'seating', 'livery', 'depot']
 
 file_operator_mapping = {
-    'torrens.csv': 'Torrens Transit',
-    'southlink.csv': 'SouthLink',
-    'busways.csv': 'Busways'
+    'csv/torrens.csv': 'Torrens Transit',
+    'csv/southlink.csv': 'SouthLink',
+    'csv/busways.csv': 'Busways'
 }
 
-combined_json_file = 'combined_data.json'
+combined_json_file = 'table.json'
 
 for file_name, operator in file_operator_mapping.items():
     try:
